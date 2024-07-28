@@ -1,4 +1,18 @@
-.aman{
-    font-size: 34px;
-    color: aqua;
+body{
+    margin: 0%;
+}
+.headers{
+    width: 100%;
+}
+.top-header{
+    background-color: #333333;
+    width: 100%;
+}
+.container{
+    align-items: center;
+    width: 100%;
+}
+.para{
+    color: #FFFFFF;
+    font-weight: bold;
 }
