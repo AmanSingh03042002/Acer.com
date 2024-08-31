@@ -1,6 +1,7 @@
 body{
     margin: 0%;
     background-color: #FFFFFF;
+    list-style: none;
     
 }
 .headers{
@@ -177,8 +178,8 @@ padding-bottom: 70px;
     padding-left:  1.5rem;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 .awg-container-1{
     border-bottom: 2px #222 solid;
@@ -202,17 +203,33 @@ padding-bottom: 70px;
     margin-top:1rem;
 }
 
-.p-1{
+.para-1{
     font-size: 15px;
-    margin-bottom:3px;
+    margin-bottom:.5rem;
 }
-.p-2{
+.para-two {
     font-weight: 600;
     font-size:20px;
     margin-bottom:3px;
-    cursor: pointer;
+    display:inline;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 200% 1px;
+    transition: background-position .6s ease-in-out;
+    padding: 0 !important;
+    color: #222; 
 }
 
+.para-two:hover {
+    text-decoration: none;
+    background-position: 0 100%;
+    background-image: linear-gradient(to left, transparent 50%, #222222 50%);
+    cursor:pointer;
+}
+.para-3{
+    font-size: 15px;
+    margin-top:.5rem; 
+}
 .right-main{
     margin-left: 23px;
 }
@@ -226,4 +243,182 @@ padding-bottom: 70px;
     object-fit: cover;
     margin-right: 1rem;
 }
+
+.primary-section{
+    background-color: #fff;
+    color: #222;
+    justify-content: center;
+    padding-bottom: 70px;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+}
+.primary-img-zoom-detail {
+    overflow: hidden; /* Ensure the image doesn't overflow out of its container */
+    position: relative; /* Add positioning to help with overflow handling */
+}
+
+.primary-img-zoom {
+    position: relative; /* Ensure the parent container is positioned for the zoom effect */
+}
+
+.primary-img-zoom img {
+    transition: transform 0.1s ease-in-out; /* Smooth zoom transition */
+    width: 100%; /* Ensure image fits within its container */
+    display: block; /* Remove any extra space below the image */
+}
+
+.primary-img-zoom:hover img {
+    transform: scale(1.2); /* Zoom in on hover */
+}
+
+.primary-section-detail {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Space out each card */
+}
+.image-zooming-text{
+    max-width: 325px;
+    height: 17vh;
+}
+#card-text-1{
+    margin-bottom: .5rem;
+    font-size: clamp(1.13rem, 0.21vw + 1.08rem, 1.27rem) !important;
+    color: #222;
+    font-weight: 600;
+}
+#card-text-2{
+margin-bottom: 0px;
+width: 100%;
+}
+.more {
+    display: flex;
+    align-items: center;
+}
+#more-button{
+    color: #474747;
+    border: 0 none;
+    border-bottom: 2px solid #80c343;
+    padding: 14px 0 4px;
+    min-width: auto;
+    background-color: #fff;
+    font-size: 1rem;
+    border-radius: 2px;
+    font-weight: 500;
+}
+#more-button:hover{
+    border-bottom: 2px solid black
+    
+}
+.bottom-third-last{
+    align-items: center;
+    justify-content: center;
+}
+#back-to-top-button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #f8f8f8;
+    color: #333;
+    font-size: clamp(.79rem, .15vw + .76rem, .89rem);
+    font-weight: 600;
+}
+#back-to-top-button:hover{
+    background-color: #e0e0e0;
+    transition: 0.6s;
+}
+.bottom-section{
+    background-color: #f0f0f0;
+}
+.bottom-card{
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    background-color: #f0f0f0;
+}
+.bottom-card-detail{
+    padding-left: 3.5rem;
+    padding-right: 1.5rem;
+    width: 25%;
+}
+#bottom-card-text-1{
+    font-size: clamp(1rem, 0.19vw + 0.96rem, 1.13rem) !important;
+    font-weight: 600;
+}
+#bottom-card-text-2{
+    padding-top: .5rem !important;
+    padding-bottom: .5rem !important;
+    font-size: clamp(1rem, .19vw + .96rem, 1.13rem);
+    font-weight: 400;
+}
+.bottom-card-detail-2{
+    margin-top:27px;
+
+    }
+.bottom-last{
+    width: 100%;
+    height: 100%;
+}
+.bottom-last-1{
+    border-top:  2px solid #e0e0e0; ;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.bottom-last-2{
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 1.95rem;
+}
+#bottom-last-2-image{
+    padding: 0.75rem;
+    cursor: pointer;
+}
+.bottom-last-3{
+    justify-content: center;
+    align-items: center;
+    list-style: none; 
+}
+#bottom-last-3-text{    
+    padding: 4px 16px;
+    margin: 0;
+    border-right: 2px #e0e0e0 solid;
+    font-size: clamp(.79rem, .15vw + .76rem, .89rem);
+    cursor: pointer;
+    font-weight: 400;
+}
+.bottom-last-4{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 1.5rem;
+}
+#bottom-last-4-image{
+    margin-right:1rem;
+}
+#bottom-last-4-text{
+    font-weight: 600;
+    font-size: clamp(0.79rem, 0.15vw + 0.76rem, 0.89rem) !important;
+    color: #222;
+    cursor: pointer;
+}
+.bottom-last-5{
+    align-items: center;
+    justify-content:center;
+    padding-bottom:3rem;
+    flex-wrap: wrap;
+}
+#bottom-last-5-text{
+    color: #222;
+    font-size: small;
+    
+}
+
 
