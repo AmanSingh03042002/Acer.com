@@ -351,8 +351,10 @@ width: 100%;
     padding-top: .5rem !important;
     padding-bottom: .5rem !important;
     font-size: clamp(1rem, .19vw + .96rem, 1.13rem);
-    font-weight: 400;
+    font-weight: 450;
+    cursor: pointer; 
 }
+
 .bottom-card-detail-2{
     margin-top:27px;
 
@@ -367,8 +369,6 @@ width: 100%;
     margin-left: 25px;
 }
 .bottom-last-2{
-    margin-left: -0.75rem;
-    margin-right: -0.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -382,16 +382,35 @@ width: 100%;
 .bottom-last-3{
     justify-content: center;
     align-items: center;
-    list-style: none; 
+    list-style: none;    
+    gap: 15px;
+}
+.right-border{
+    border-right: 2px #e0e0e0 solid;
+    height: 25px;
 }
 #bottom-last-3-text{    
-    padding: 4px 16px;
+    padding: 4px 16px ;
     margin: 0;
-    border-right: 2px #e0e0e0 solid;
     font-size: clamp(.79rem, .15vw + .76rem, .89rem);
     cursor: pointer;
-    font-weight: 400;
+    font-weight: 450;
+    margin-bottom:3px;
+    display:inline;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 200% 1px;
+    transition: background-position .4s ease-in-out;
+    padding: 0 !important;
+    color: #222; 
 }
+
+#bottom-last-3-text:hover{
+    background-position: 0 100%;
+    background-image: linear-gradient(to left, transparent 50%, #222222 50%);
+    cursor:pointer;
+}
+
 .bottom-last-4{
     list-style: none;
     display: flex;
